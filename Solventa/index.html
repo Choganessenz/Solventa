@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solvente Digital Solutions</title>
+    <link rel="stylesheet" href="index_styles.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <div id="particle-bg"></div>
+    
+    <!-- Glitch Transition Overlay -->
+    <div class="glitch-overlay" id="glitch-overlay">
+        <canvas id="glitch-canvas"></canvas>
+    </div>
+    
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="material/logo.png" alt="Solventa Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#about">Über uns</a>
+                <a href="#solutions">Lösungen</a>
+                <a href="#contact">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="canvas-container"></div>
+    <div id="hero-text">Bereit für die Zukunft?</div>
+    <div id="company-name">Solventa Digital Solutions</div>
+    
+    <div id="scroll-content">
+        <div style="height: 500vh;"></div>
+    </div>
+    
+    <section id="solutions">
+        <div class="grid-bg"></div>
+        <div class="grid-spotlight"></div>
+        <div class="solutions-container">
+            <h2 class="solutions-title">Unsere Lösungen</h2>
+            <div class="solutions-grid">
+                <div class="solution-card" data-index="0">
+                    <div class="solution-content">
+                        <div class="solution-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Websites" class="solution-img">
+                        </div>
+                        <div class="solution-text">
+                            <h3 class="solution-title">Websites</h3>
+                            <p class="solution-slogan">Mehr Präsenz, Mehr Aufträge</p>
+                            <button class="solution-btn" data-page="websites.html">Mehr erfahren</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card" data-index="1">
+                    <div class="solution-content">
+                        <div class="solution-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop" alt="Bestellsysteme" class="solution-img">
+                        </div>
+                        <div class="solution-text">
+                            <h3 class="solution-title">Bestellsysteme</h3>
+                            <p class="solution-slogan">20% mehr Umsatz, und das garantiert*</p>
+                            <button class="solution-btn" data-page="bestellsysteme.html">Mehr erfahren</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card" data-index="2">
+                    <div class="solution-content">
+                        <div class="solution-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop" alt="KI Automatisierung" class="solution-img">
+                        </div>
+                        <div class="solution-text">
+                            <h3 class="solution-title">KI Automatisierung</h3>
+                            <p class="solution-slogan">Damit Sie Zeit für wichtigeres haben</p>
+                            <button class="solution-btn" data-page="ki-automatisierung.html">Mehr erfahren</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card" data-index="3">
+                    <div class="solution-content">
+                        <div class="solution-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop" alt="Verwaltungs Apps" class="solution-img">
+                        </div>
+                        <div class="solution-text">
+                            <h3 class="solution-title">Verwaltungs Apps</h3>
+                            <p class="solution-slogan">Überblick über Mitarbeiter und Dokumenten</p>
+                            <button class="solution-btn" data-page="verwaltungs-apps.html">Mehr erfahren</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="about-blob blob-1"></div>
+        <div class="about-blob blob-2"></div>
+        <div class="about-blob blob-3"></div>
+        
+        <div class="particles-about" id="particles-about"></div>
+        
+        <div class="about-container">
+            <div class="about-card" id="about-card">
+                <h2 class="about-title">Wer wir sind</h2>
+                <p class="about-text">
+                    Wir sind mehr als nur eine Agentur. Wir sind Ihr Partner für digitale Innovation. 
+                    Mit modernsten Technologien und kreativen Lösungen bringen wir Ihr Unternehmen in die digitale Zukunft.
+                </p>
+                <div class="about-button-wrapper">
+                    <a href="about.html" class="portal-button">
+                        <div class="portal-ring"></div>
+                        <span class="portal-text">Unsere Geschichte entdecken</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline">
+        <div class="timeline-container">
+            <h2 class="timeline-title">Unser Prozess</h2>
+            <p class="timeline-subtitle">Von der ersten Idee bis zum fertigen Produkt – transparent und effizient</p>
+            
+            <div class="timeline-items">
+                <div class="timeline-path">
+                    <div class="timeline-line-progress"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <span class="timeline-step">Schritt 1</span>
+                            <h3 class="timeline-card-title">Kostenloses Erstgespräch</h3>
+                            <p class="timeline-card-description">
+                                In einem unverbindlichen Gespräch lernen wir Ihre Vision, Ziele und Herausforderungen kennen. 
+                                Wir analysieren Ihre Anforderungen und beraten Sie zu den besten Lösungsansätzen.
+                            </p>
+                            <div class="timeline-features">
+                                <span class="timeline-feature">30-45 Minuten</span>
+                                <span class="timeline-feature">Kostenlos & unverbindlich</span>
+                                <span class="timeline-feature">Online oder vor Ort</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <span class="timeline-step">Schritt 2</span>
+                            <h3 class="timeline-card-title">Konzeptentwicklung</h3>
+                            <p class="timeline-card-description">
+                                Wir erstellen ein detailliertes Konzept mit Zeitplan, Meilensteinen und transparenter Kostenaufstellung. 
+                                Sie erhalten eine klare Roadmap für Ihr Projekt.
+                            </p>
+                            <div class="timeline-features">
+                                <span class="timeline-feature">Detaillierter Projektplan</span>
+                                <span class="timeline-feature">Festpreisangebot</span>
+                                <span class="timeline-feature">Wireframes & Mockups</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <span class="timeline-step">Schritt 3</span>
+                            <h3 class="timeline-card-title">Design & Entwicklung</h3>
+                            <p class="timeline-card-description">
+                                Unser Team bringt Ihre Vision zum Leben. Mit modernen Technologien und kreativem Design 
+                                entwickeln wir eine Lösung, die begeistert und funktioniert.
+                            </p>
+                            <div class="timeline-features">
+                                <span class="timeline-feature">Agile Entwicklung</span>
+                                <span class="timeline-feature">Regelmäßige Updates</span>
+                                <span class="timeline-feature">Moderne Technologien</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <span class="timeline-step">Schritt 4</span>
+                            <h3 class="timeline-card-title">Testing & Feedback</h3>
+                            <p class="timeline-card-description">
+                                Bevor wir live gehen, testen wir alles gründlich. Sie erhalten eine Testversion und können 
+                                Feedback geben. Wir optimieren, bis Sie 100% zufrieden sind.
+                            </p>
+                            <div class="timeline-features">
+                                <span class="timeline-feature">Umfangreiche Tests</span>
+                                <span class="timeline-feature">Ihre Feedbackrunde</span>
+                                <span class="timeline-feature">Optimierungen inklusive</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <span class="timeline-step">Schritt 5</span>
+                            <h3 class="timeline-card-title">Launch & Support</h3>
+                            <p class="timeline-card-description">
+                                Ihr Projekt geht live! Aber damit ist unsere Arbeit nicht vorbei. Wir begleiten Sie auch nach dem 
+                                Launch mit Support, Wartung und kontinuierlicher Optimierung.
+                            </p>
+                            <div class="timeline-features">
+                                <span class="timeline-feature">Reibungsloser Launch</span>
+                                <span class="timeline-feature">Schulung Ihres Teams</span>
+                                <span class="timeline-feature">Laufender Support</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section id="contact-cta">
+        <div class="contact-cta-bg"></div>
+        <div class="contact-cta-container">
+            <div class="contact-cta-badge">Kostenloses Erstgespräch</div>
+            <h2 class="contact-cta-title">Nehmen Sie jetzt Kontakt mit uns auf</h2>
+            <p class="contact-cta-subtitle">
+                Bereit für die digitale Transformation? Lassen Sie uns gemeinsam Ihre Vision verwirklichen.
+            </p>
+            <a href="kontakt.html" class="contact-cta-button">Jetzt Kontakt aufnehmen</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section footer-brand">
+                    <div class="footer-logo">
+                        <img src="material/logo.png" alt="Solventa Logo">
+                    </div>
+                    <p class="footer-tagline">
+                        Ihr Partner für digitale Innovation. Mit modernsten Technologien 
+                        und kreativen Lösungen bringen wir Ihr Unternehmen in die digitale Zukunft.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Lösungen</h3>
+                    <ul>
+                        <li><a href="websites.html">Websites</a></li>
+                        <li><a href="bestellsysteme.html">Bestellsysteme</a></li>
+                        <li><a href="ki-automatisierung.html">KI Automatisierung</a></li>
+                        <li><a href="verwaltungs-apps.html">Verwaltungs Apps</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Unternehmen</h3>
+                    <ul>
+                        <li><a href="#about">Über uns</a></li>
+                        <li><a href="#timeline">Unser Prozess</a></li>
+                        <li><a href="about.html">Unsere Geschichte</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <ul>
+                        <li><a href="kontakt.html">Kontakt aufnehmen</a></li>
+                        <li><a href="kontakt.html">Kostenloses Erstgespräch</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2025 Solventa Digital Solutions. Alle Rechte vorbehalten.
+                </div>
+                <div class="footer-legal">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/DRACOLoader.js"></script>
+
+    <script>
+        // Force scroll to top on page load
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+        window.addEventListener('beforeunload', () => {
+            window.scrollTo(0, 0);
+        });
+        window.scrollTo(0, 0);
+
+        let scene, camera, renderer, macbook, screenPart;
+        let scrollProgress = 0;
+        let initialScreenRotation = 0; // Store initial rotation
+        const INITIAL_CAMERA_Z = -0.5;
+
+        function init() {
+            if (typeof THREE.GLTFLoader === 'undefined') {
+                console.error('GLTFLoader not loaded! Check the script tag.');
+                return;
+            }
+            console.log('THREE.js and GLTFLoader loaded successfully');
+            
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0x000000);
+
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.z = INITIAL_CAMERA_Z;
+
+            renderer = new THREE.WebGLRenderer({ antialias: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(window.devicePixelRatio);
+            document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+            const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+            scene.add(ambientLight);
+
+            const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+            directionalLight.position.set(5, 5, 5);
+            scene.add(directionalLight);
+
+            const directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.5);
+            directionalLight2.position.set(-5, 3, -5);
+            scene.add(directionalLight2);
+
+            console.log('Attempting to load mac.glb...');
+            
+            const dracoLoader = new THREE.DRACOLoader();
+            dracoLoader.setDecoderPath('https://www.gstatic.com/draco/v1/decoders/');
+            
+            const loader = new THREE.GLTFLoader();
+            loader.setDRACOLoader(dracoLoader);
+            
+            loader.load(
+                './mac.glb',
+                (gltf) => {
+                    console.log('Model loaded successfully!', gltf);
+                    macbook = gltf.scene;
+                    
+                    macbook.traverse((child) => {
+                        if (child.isMesh) {
+                            console.log('Mesh:', child.name, '| Material:', child.material.name, '| Parent:', child.parent ? child.parent.name : 'none');
+                            
+                            if (child.material.color) {
+                                const brightness = (child.material.color.r + child.material.color.g + child.material.color.b) / 3;
+                                
+                                if (brightness > 0.7) {
+                                    child.material = new THREE.MeshStandardMaterial({
+                                        color: 0x000000,
+                                        metalness: 0.1,
+                                        roughness: 0.2,
+                                        emissive: 0x000000
+                                    });
+                                    console.log('✓ Made bright material black:', child.name);
+                                }
+                            }
+                            
+                            const name = child.name ? child.name.toLowerCase() : '';
+                            if (name.includes('screen') || name.includes('display') || name.includes('lid') || name.includes('top')) {
+                                screenPart = child;
+                                initialScreenRotation = child.rotation.x; // Save initial rotation
+                                console.log('✓ Found screen part:', child.name, 'Initial rotation:', initialScreenRotation);
+                            }
+                        }
+                        
+                        if (child.isGroup || child.isObject3D) {
+                            const name = child.name ? child.name.toLowerCase() : '';
+                            if (name.includes('screen') || name.includes('display') || name.includes('lid') || name.includes('top')) {
+                                screenPart = child;
+                                initialScreenRotation = child.rotation.x; // Save initial rotation
+                                console.log('✓ Found screen group:', child.name, 'Initial rotation:', initialScreenRotation);
+                            }
+                        }
+                    });
+                    
+                    if (!screenPart) {
+                        console.log('⚠ Could not find separate screen part, will animate whole MacBook');
+                    }
+                    
+                    const box = new THREE.Box3().setFromObject(macbook);
+                    const center = box.getCenter(new THREE.Vector3());
+                    const size = box.getSize(new THREE.Vector3());
+                    
+                    console.log('Model size:', size);
+                    console.log('Model center:', center);
+                    
+                    const maxDim = Math.max(size.x, size.y, size.z);
+                    const scale = 3 / maxDim;
+                    macbook.scale.setScalar(scale);
+                    
+                    macbook.position.sub(center.multiplyScalar(scale));
+                    
+                    macbook.rotation.x = 0;
+                    macbook.rotation.y = 0;
+                    
+                    scene.add(macbook);
+                    console.log('Model added to scene');
+                },
+                (xhr) => {
+                    console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+                },
+                (error) => {
+                    console.error('Error loading model:', error);
+                    console.error('Make sure mac.glb is in the same folder as index.html');
+                }
+            );
+
+            window.addEventListener('resize', onWindowResize, false);
+            window.addEventListener('scroll', onScroll, false);
+
+            // Observe solutions section for animation trigger
+            observeSolutionsSection();
+
+            animate();
+        }
+
+        function observeSolutionsSection() {
+            const solutionsSection = document.getElementById('solutions');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        solutionsSection.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.15
+            });
+
+            observer.observe(solutionsSection);
+        }
+
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+
+        function onScroll() {
+            // Calculate scroll progress based on the scroll-content div (500vh), not entire page
+            const scrollContent = document.getElementById('scroll-content');
+            const scrollContentRect = scrollContent.getBoundingClientRect();
+            const scrollContentTop = scrollContent.offsetTop;
+            const scrollContentHeight = scrollContent.offsetHeight;
+            
+            // Calculate how far we've scrolled into the scroll-content area
+            const scrollY = window.scrollY;
+            
+            // Progress is 0 at start of scroll-content, 1 at end of scroll-content
+            if (scrollY < scrollContentTop) {
+                scrollProgress = 0;
+            } else if (scrollY > scrollContentTop + scrollContentHeight - window.innerHeight) {
+                scrollProgress = 1;
+            } else {
+                scrollProgress = (scrollY - scrollContentTop) / (scrollContentHeight - window.innerHeight);
+            }
+            
+            updateAnimation();
+        }
+
+        function updateAnimation() {
+            if (!macbook) return;
+
+            const heroText = document.getElementById('hero-text');
+            const companyName = document.getElementById('company-name');
+            const canvasContainer = document.getElementById('canvas-container');
+            const navbar = document.getElementById('navbar');
+            const particleBg = document.getElementById('particle-bg');
+            
+            // Phase 1: Text stays, Camera zooms out less (0-0.25)
+            if (scrollProgress < 0.25) {
+                const phase1Progress = scrollProgress / 0.25;
+                
+                heroText.style.opacity = 1;
+                heroText.style.transform = 'translate(-50%, -50%)'; // Reset transform
+                
+                const fontSize = 4 - (phase1Progress * 3);
+                heroText.style.fontSize = fontSize + 'rem';
+                
+                camera.position.z = INITIAL_CAMERA_Z + (phase1Progress * 3);
+                
+                companyName.style.opacity = 0;
+                companyName.style.transform = 'translate(-50%, -50%)';
+                canvasContainer.style.transform = 'translateY(0)';
+                navbar.style.transform = 'translateY(-100%)';
+                
+                // Particle background zoom out (from 3 to ~2.4)
+                const scale = 3 - (phase1Progress * 0.6);
+                particleBg.style.transform = `translate(-50%, -50%) scale(${scale})`;
+            }
+            // Phase 2: Text fades out (0.25-0.5)
+            else if (scrollProgress < 0.5) {
+                const phase2Progress = (scrollProgress - 0.25) / 0.25;
+                
+                heroText.style.opacity = 1 - phase2Progress;
+                heroText.style.transform = 'translate(-50%, -50%)'; // Reset transform
+                heroText.style.fontSize = '1rem';
+                
+                camera.position.z = INITIAL_CAMERA_Z + 3;
+                
+                companyName.style.opacity = 0;
+                companyName.style.transform = 'translate(-50%, -50%)';
+                canvasContainer.style.transform = 'translateY(0)';
+                navbar.style.transform = 'translateY(-100%)';
+                
+                // Continue zooming out (from 2.4 to ~1.8)
+                const scale = 2.4 - (phase2Progress * 0.6);
+                particleBg.style.transform = `translate(-50%, -50%) scale(${scale})`;
+            }
+            // Phase 3: Screen closes from 90° to 180° AND company name starts appearing (0.5-0.75)
+            else if (scrollProgress < 0.75) {
+                heroText.style.opacity = 0;
+                heroText.style.transform = 'translate(-50%, -50%)'; // Reset transform
+                camera.position.z = INITIAL_CAMERA_Z + 3;
+                
+                const phase3Progress = (scrollProgress - 0.5) / 0.25;
+                
+                // Close the screen
+                const closingAngle = (Math.PI / 2) * phase3Progress;
+                
+                if (screenPart) {
+                    screenPart.rotation.x = initialScreenRotation + closingAngle;
+                } else {
+                    macbook.rotation.x = closingAngle;
+                }
+                
+                // Fade out MacBook and fade in company name simultaneously
+                macbook.traverse((child) => {
+                    if (child.isMesh) {
+                        child.material.opacity = 1 - phase3Progress;
+                        child.material.transparent = true;
+                    }
+                });
+                
+                // Company name starts appearing halfway through (at progress 0.5)
+                const nameProgress = Math.max(0, (phase3Progress - 0.5) * 2); // 0 to 1 in second half
+                companyName.style.opacity = nameProgress;
+                companyName.style.transform = 'translate(-50%, -50%)';
+                canvasContainer.style.transform = 'translateY(0)';
+                navbar.style.transform = 'translateY(-100%)';
+                
+                // Continue zooming out (from 1.8 to ~1.25)
+                const scale = 1.8 - (phase3Progress * 0.55);
+                particleBg.style.transform = `translate(-50%, -50%) scale(${scale})`;
+            }
+            // Phase 4: Everything visible and stays (0.75-1.0)
+            else {
+                heroText.style.opacity = 0;
+                heroText.style.transform = 'translate(-50%, -50%)'; // Reset transform
+                camera.position.z = INITIAL_CAMERA_Z + 3;
+                
+                const phase4Progress = (scrollProgress - 0.75) / 0.25;
+                
+                if (screenPart) {
+                    screenPart.rotation.x = initialScreenRotation + (Math.PI / 2);
+                } else {
+                    macbook.rotation.x = Math.PI / 2;
+                }
+                
+                // MacBook completely invisible
+                macbook.traverse((child) => {
+                    if (child.isMesh) {
+                        child.material.opacity = 0;
+                        child.material.transparent = true;
+                    }
+                });
+                
+                // Keep company name visible
+                companyName.style.opacity = 1;
+                companyName.style.transform = 'translate(-50%, -50%)';
+                canvasContainer.style.transform = 'translateY(0)';
+                
+                // Navbar slides in from top
+                if (phase4Progress > 0.3) {
+                    navbar.style.transform = 'translateY(0)';
+                } else {
+                    navbar.style.transform = 'translateY(-100%)';
+                }
+                
+                // Particle background stays at scale 1.25 (showing ~80% of image)
+                particleBg.style.transform = 'translate(-50%, -50%) scale(1.25)';
+
+                
+            }
+        }
+        
+
+        function animate() {
+            requestAnimationFrame(animate);
+            renderer.render(scene, camera);
+        }
+
+        // Grid spotlight effect
+        function initGridSpotlight() {
+            const solutionsSection = document.getElementById('solutions');
+            const spotlight = document.querySelector('.grid-spotlight');
+            
+            solutionsSection.addEventListener('mousemove', (e) => {
+                const rect = solutionsSection.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                // Create a radial mask that reveals the brighter grid only around cursor
+                const mask = `radial-gradient(circle 300px at ${x}px ${y}px, 
+                    black 0%, 
+                    black 40%,
+                    transparent 100%)`;
+                
+                spotlight.style.webkitMaskImage = mask;
+                spotlight.style.maskImage = mask;
+            });
+            
+            solutionsSection.addEventListener('mouseleave', () => {
+                spotlight.style.opacity = '0';
+            });
+            
+            solutionsSection.addEventListener('mouseenter', () => {
+                spotlight.style.opacity = '1';
+            });
+        }
+
+        // About Section Interactive Effects
+        function initAboutSection() {
+            const aboutCard = document.getElementById('about-card');
+            const particlesContainer = document.getElementById('particles-about');
+            
+            // Generate floating particles
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.setProperty('--tx', (Math.random() - 0.5) * 200 + 'px');
+                particle.style.setProperty('--ty', (Math.random() - 0.5) * 200 + 'px');
+                particle.style.animationDelay = Math.random() * 10 + 's';
+                particlesContainer.appendChild(particle);
+            }
+            
+            // 3D Tilt effect on mouse move (optimized with RAF)
+            if (aboutCard) {
+                let tiltRAF = null;
+                let mouseX = 0;
+                let mouseY = 0;
+                
+                aboutCard.addEventListener('mousemove', (e) => {
+                    const rect = aboutCard.getBoundingClientRect();
+                    mouseX = e.clientX - rect.left;
+                    mouseY = e.clientY - rect.top;
+                    
+                    if (!tiltRAF) {
+                        tiltRAF = requestAnimationFrame(() => {
+                            const centerX = rect.width / 2;
+                            const centerY = rect.height / 2;
+                            
+                            const rotateX = (mouseY - centerY) / 30;
+                            const rotateY = (centerX - mouseX) / 30;
+                            
+                            aboutCard.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                            tiltRAF = null;
+                        });
+                    }
+                });
+                
+                aboutCard.addEventListener('mouseleave', () => {
+                    aboutCard.style.transform = 'rotateX(0deg) rotateY(0deg)';
+                    if (tiltRAF) {
+                        cancelAnimationFrame(tiltRAF);
+                        tiltRAF = null;
+                    }
+                });
+            }
+        }
+
+
+        init();
+        initGridSpotlight();
+        initAboutSection();
+
+        // Timeline Section Animation
+        function initTimelineSection() {
+            const timelineSection = document.getElementById('timeline');
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            const timelineLine = document.querySelector('.timeline-line-progress');
+            const timelineItemsContainer = document.querySelector('.timeline-items');
+            
+            if (!timelineSection || !timelineLine || !timelineItemsContainer) return;
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: '0px 0px -100px 0px'
+            });
+            
+            timelineItems.forEach(item => observer.observe(item));
+            
+            // Animate the timeline line based on scroll - line grows to center of viewport
+            function updateTimelineLine() {
+                
+                const containerRect = timelineItemsContainer.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                const viewportCenter = windowHeight / 2;
+                
+                // Calculate where viewport center is relative to the timeline container
+                const containerTop = containerRect.top;
+                const containerHeight = containerRect.height;
+                
+                // Distance from container top to viewport center
+                const distanceScrolled = viewportCenter - containerTop;
+                
+                let progress;
+                if (distanceScrolled <= 0) {
+                    // Viewport center hasn't reached timeline yet
+                    progress = 0;
+                } else if (distanceScrolled >= containerHeight) {
+                    // Viewport center has passed timeline
+                    progress = 1;
+                } else {
+                    // Viewport center is within timeline
+                    progress = distanceScrolled / containerHeight;
+                }
+                
+                timelineLine.style.height = (progress * 100) + '%';
+            }
+            
+            window.addEventListener('scroll', updateTimelineLine);
+            updateTimelineLine();
+        }
+
+        initTimelineSection();
+
+        // Company Name nach 500vh ausblenden
+        function hideCompanyNameAfterScroll() {
+            const scrollY = window.scrollY;
+            const viewportHeight = window.innerHeight;
+            const scrolledVH = scrollY / viewportHeight * 100;
+            
+            if (scrolledVH > 500) {
+                document.getElementById('company-name').style.display = 'none';
+            }
+            else{
+                document.getElementById('company-name').style.display = '';
+            }
+        }
+
+        window.addEventListener('scroll', hideCompanyNameAfterScroll);
+        hideCompanyNameAfterScroll(); // Einmal initial checken
+
+
+    </script>
+</body>
+</html>
